@@ -6,12 +6,12 @@ char line[MAXLINE];
 char strings[5][MAXLINE];
 int lengths[5];
 
-main() {
+int main() {
 	int count = 0;
 
 	while (count < 5) {
 		scanf("%[^\n]", line);
-		grtchar();
+		getchar();
 		copy(line, strings[count]);
 		lengths[count] = strlen(strings[count]);
 		count++;
@@ -33,7 +33,7 @@ main() {
 	}
 
 	for (int i = 0; i < 5; ++i) {
-		prnitf("%s\n", strings[i]);
+		printf("%s\n", strings[i]);
 	}
 
 	return 0;
