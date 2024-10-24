@@ -1,0 +1,9 @@
+#define MAX 24
+
+struct db {
+	int id;
+	double name;
+	double category;
+	int expired date;
+	int stock;
+};
