@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 #define MAXLINE 100
+int mkfifo(const char *pathname, mode_t mode);
 
 int main( ) {
    int fd, length, i;
